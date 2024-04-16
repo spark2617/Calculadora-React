@@ -3,7 +3,12 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 
-    background-color: #252626;
+background: rgba( 22, 22, 22, 0.65 );
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     display: flex;
     justify-content: center;
@@ -12,16 +17,23 @@ export const Button = styled.button`
     height: 70px;
     width: 70px;
 
-    border-radius: 20%;
+   
 
     color: ${props => props.color=="white"?"white": props.color=="red"? "red": "green"};
     font-size: 1.8rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     border: transparent;
+    transition: 0.4s;
 
     &:hover{
-        background-color: #3c3d3c;
+        transition: 0.4s;
+        background: rgba( 101, 101, 101, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 7, 131, 4, 0.35 );;
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+       
     }
 
 `
@@ -40,13 +52,16 @@ export const Visor = styled.div`
     width: 295px;
     height: 100px;
 
-    background-color: #121212;
+    background: rgba( 0, 0, 0, 0.6 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     margin-bottom: 5px;
 
-    border-radius: 6px;
 
-    color: #bfbfbf;
+    color: rgba( 4, 118, 0, 0.6 );
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.25rem;
 
@@ -71,8 +86,10 @@ export const ContainerCalc = styled.div`
     width: 340px;
     height: 520px;
 
-    background-color: #363636;
-
-    border-radius: 12px;
-
+    background: rgba( 63, 63, 63, 0.5 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 `
