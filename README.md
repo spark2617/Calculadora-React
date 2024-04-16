@@ -17,27 +17,24 @@
 
   **Clone este repositório em seu ambiente local:**
 
-bash
-    git clone https://github.com/spark2617/Calculadora-React.git
+```bash
+  git clone https://github.com/spark2617/Calculadora-React.git
+```
+  **Navegue até o diretório do projeto:**
 
-    Navegue até o diretório do projeto:
+```bash
+  cd calculadora-react
+```
+  **Instale as dependências necessárias:**
 
-bash
+```bash
+  npm install
+```
+  **Inicie o servidor de desenvolvimento:**
 
-    cd calculadora-react
-
-  Instale as dependências necessárias:
-
-bash
-
-    npm install
-
-  Inicie o servidor de desenvolvimento:
-
-bash
-
-    npm start
-
+```bash
+  npm run dev
+```
   **Abra seu navegador e acesse http://localhost:5173/ para visualizar a calculadora em ação.**
 
 ## Uso
@@ -50,9 +47,9 @@ bash
 
 **Contribuições são bem-vindas! Se você deseja melhorar esta calculadora ou corrigir problemas, siga estas etapas:**
 
-    Faça um fork deste repositório.
-    Crie uma nova branch com suas modificações:
+**Faça um fork deste repositório.**
 
+**Crie uma nova branch com suas modificações:**
 ```bash
 git checkout -b feature/sua-feature
 ```
