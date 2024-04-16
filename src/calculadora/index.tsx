@@ -27,7 +27,7 @@ export default function Calculadora() {
         else if (pointRgex.test(visor)) {
             updateVisor((prev: string) => prev + "0" + n)
         }
-        else if(closeParentRegex.test(visor)){
+        else if (closeParentRegex.test(visor)) {
             updateVisor((prev: string) => prev + n)
         }
     }
@@ -73,21 +73,21 @@ export default function Calculadora() {
 
         else if (numberRegex.test(n) || pointRgex.test(n)) {
 
-            visor == "0" ? updateVisor(n) : /[%]$/.test(visor) ? updateVisor((prev: string) => prev + "x" + n) : updateVisor((prev: string) => prev + n)
+            visor == "0" ? updateVisor(n) : /[%]$/.test(visor) || closeParentRegex.test(visor) ? updateVisor((prev: string) => prev + "x" + n) : updateVisor((prev: string) => prev + n)
 
         }
 
         else if (lastCharIsOperatorRegex.test(n)) validationOperador(n)
 
-        else if ("%" === n){
-            if(lastCharIsOperatorRegex.test(visor)){
-                updateVisor(visor.replace(lastCharIsOperatorRegex,"%"))
+        else if ("%" === n) {
+            if (lastCharIsOperatorRegex.test(visor)) {
+                updateVisor(visor.replace(lastCharIsOperatorRegex, "%"))
             }
-            else{
+            else {
                 updateVisor((prev) => prev + n)
             }
 
-        } 
+        }
 
 
 
@@ -95,9 +95,9 @@ export default function Calculadora() {
     }
 
     function handleResult() {
-        
+
         let processedExpression = visor.replace(/x/g, "*").replace(/%/g, "/100");
-    
+
         try {
             let result = eval(processedExpression);
             updateVisor(result.toString());
