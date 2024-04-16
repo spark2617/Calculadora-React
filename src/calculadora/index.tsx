@@ -94,15 +94,18 @@ export default function Calculadora() {
 
     }
 
-    async function handleResult() {
-
-        visor = visor.replace(/[x]/, "*");
-        visor = visor.replace(/[%]/, "/100")
+    function handleResult() {
         
-        await eval(visor)! ? updateVisor(prev=>prev=eval(visor)) : updateVisor("Invalid!")
+        let processedExpression = visor.replace(/x/g, "*").replace(/%/g, "/100");
+    
+        try {
+            let result = eval(processedExpression);
+            updateVisor(result.toString());
 
+        } catch (error) {
+            updateVisor("Invalid!")
+        }
     }
-
     function clean(): void {
         updateVisor("0")
         countOpenParent = 0
