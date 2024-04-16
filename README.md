@@ -13,31 +13,30 @@
 
 ## Instalação
 
-**Para executar este projeto localmente, siga estas etapas:**
+### Para executar este projeto localmente, siga estas etapas:
 
-    Clone este repositório em seu ambiente local:
+  **Clone este repositório em seu ambiente local:**
 
 bash
-
-git clone https://github.com/spark2617/Calculadora-React.git
+    git clone https://github.com/spark2617/Calculadora-React.git
 
     Navegue até o diretório do projeto:
 
 bash
 
-cd calculadora-react
+    cd calculadora-react
 
-    Instale as dependências necessárias:
-
-bash
-
-npm install
-
-    Inicie o servidor de desenvolvimento:
+  Instale as dependências necessárias:
 
 bash
 
-npm start
+    npm install
+
+  Inicie o servidor de desenvolvimento:
+
+bash
+
+    npm start
 
   **Abra seu navegador e acesse http://localhost:5173/ para visualizar a calculadora em ação.**
 
