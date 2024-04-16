@@ -53,22 +53,19 @@ bash
     Faça um fork deste repositório.
     Crie uma nova branch com suas modificações:
 
-bash
+```bash
 git checkout -b feature/sua-feature
-
+```
 **Faça o commit de suas alterações:**
 
-bash
+```bash
 git commit -m 'Adicionando nova funcionalidade'
-
+```
   **Faça o push para a branch:**
 
-bash
-
+```bash
 git push origin feature/sua-feature
-
+```
   **Abra um pull request neste repositório para que suas alterações sejam revisadas e mescladas.**
 
-  ## Status
-
-  ***Intermediário***
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
